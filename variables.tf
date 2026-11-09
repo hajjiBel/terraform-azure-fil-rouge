@@ -11,10 +11,10 @@ variable "identity" {
 variable "location" {
   description = "Région Azure"
   type        = string
-  default     = "francecentral"
+  default     = "westus2"
 
   validation {
-    condition     = contains(["francecentral", "westeurope", "northeurope"], var.location)
+    condition     = contains(["francecentral", "westeurope", "westus2"], var.location)
     error_message = "Région non autorisée pour la formation (francecentral, westeurope, northeurope)."
   }
 }
