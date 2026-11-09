@@ -11,7 +11,7 @@ variable "identity" {
 variable "location" {
   description = "Région Azure"
   type        = string
-  default     = "francecentral"
+  default     = "westus2"
 
   validation {
     condition     = contains(["francecentral", "westeurope", "northeurope"], var.location)
@@ -22,7 +22,7 @@ variable "location" {
 variable "vm_size" {
   description = "Taille de la machine virtuelle"
   type        = string
-  default     = "Standard_B1s"
+  default     = "Standard_E2as_v7"
 }
 
 variable "admin_username" {
