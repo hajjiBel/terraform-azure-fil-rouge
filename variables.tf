@@ -11,7 +11,7 @@ variable "identity" {
 variable "location" {
   description = "Région Azure"
   type        = string
-  default     = "westus2"
+  default     = "francecentral"
 
   validation {
     condition     = contains(["francecentral", "westeurope", "northeurope"], var.location)
